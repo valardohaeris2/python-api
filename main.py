@@ -6,7 +6,7 @@ from random import randrange
 
 app = FastAPI()
 
-class Post(BaseModel):
+class Post(BaseModel): 
     title: str
     content: str
     published: bool = True
