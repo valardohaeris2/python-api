@@ -4,7 +4,7 @@ from fastapi.params import Body
 from pydantic import BaseModel
 from random import randrange
 import psycopg2
-from psycopg2.extras import RealDictCursor   
+from psycopg2.extras import RealDictCursor    
 import time
 from . import models
 from .database import engine, SessionLocal  
