@@ -1,5 +1,5 @@
 from typing import Optional
-from fastapi import FastAPI, Response, status, HTTPExceptio
+from fastapi import FastAPI, Response, status, HTTPExceptionn
 from fastapi.params import Body
 from pydantic import BaseModel
 from random import randrange
