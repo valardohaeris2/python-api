@@ -62,7 +62,7 @@ def get_posts():
     posts = cursor.fetchall()
     return {"data": posts}
 
-@app.post("/posts", status_code=status.HTTP_201_CREATED)
+@app.post("/posts", status_code=status.HTTP_201_CREATED) 
 def create_posts(post: Post):
     cursor.execute("""INSERT INTO posts (title, content, published) VALUES (%s, %s, %s) RETURNING * """,(post.title, post.content, post.published))
     new_post = cursor.fetchone()
